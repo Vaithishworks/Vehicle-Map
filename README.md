@@ -9,8 +9,8 @@ Vaithiyanathan Alagar
 |------|-------|------------|
 |/ego_odom |[/nav_msgs/msg/Odometry](https://docs.ros.org/en/noetic/api/nav_msgs/html/msg/Odometry.html) | Location of the ego_vehicle|
 |/cam |[/v2x/msg/CAM](https://) | Location of Nearby vehicles|
-|/path |[/M](https://) | Current path of the shuttle|
-|/road_block |[/](https://) | Roadwork indication on the path|
+|/path |[/nav_msgs/path](https://docs.ros2.org/foxy/api/nav_msgs/msg/Path.html) | Current path of the shuttle|
+|/road_block |[/robus_custom_msgs/msg/RoadBlock] | Roadwork indication on the path|
 ## Function
 Attaches visualization markers to represent the ego vehicle location from localization and the positions of nearby vehicles based on received CAM data.
 ## Output
@@ -18,14 +18,14 @@ Attaches visualization markers to represent the ego vehicle location from locali
 |------|-------|------------|
 |/ego_car_marker | [/visualization_msgs/Marker.msg](http://docs.ros.org/en/noetic/api/visualization_msgs/html/msg/Marker.html) | Marker to visualize the ego_vehicle position|
 |/nearby_vehicle_marker | [/visualization_msgs/Marker.msg](http://docs.ros.org/en/noetic/api/visualization_msgs/html/msg/Marker.html) | Marker to visualize the nearby_vehicle position |
-|/path | [/visualization_msgs/Marker.msg](http://docs.ros.org/en/noetic/api/visualization_msgs/html/msg/Marker.html) | Marker to visualize the current path in rviz2 |
-|/road_block | [/visualization_msgs/Marker.msg](http://docs.ros.org/en/noetic/api/visualization_msgs/html/msg/Marker.html) | Marker to indicate the roadwork in current path |
+|/path_marker | [/visualization_msgs/Marker.msg](http://docs.ros.org/en/noetic/api/visualization_msgs/html/msg/Marker.html) | Marker to visualize the current path in rviz2 |
+|/road_block_marker | [/visualization_msgs/Marker.msg](http://docs.ros.org/en/noetic/api/visualization_msgs/html/msg/Marker.html) | Marker to indicate the roadwork in current path |
 ## Instruction
 
 Firstly for setting up the environment, Clone the robus_vehicle_map repository.
 
 ```
-    https://git.hs-coburg.de/ROBUS/robus_vehicle_map.git
+    https://github.com/Vaithishworks/Vehicle-Map.git
 
 ```
  Download the stl file from the below drive link. 
